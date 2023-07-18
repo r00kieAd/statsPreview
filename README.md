@@ -36,7 +36,7 @@ Can be opened on any device. Some devices like tablets (not all) may suffer over
 
 ## :memo: License ##
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
 
 Made with :heart: by <a href="https://github.com/r00kieAd" target="_blank">Adhyatma Dwivedi</a>
