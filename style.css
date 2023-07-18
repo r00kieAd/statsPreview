@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+#main {
+    background-color: hsl(244, 38%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1px solid hsl(233, 47%, 7%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60rem;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#info-parent {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#h1 h1 strong {
+    color: hsl(277, 64%, 61%);
+}
+
+#info {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#p {
+    font-weight: 100;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-right: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat {
+    margin-right: 2rem;
+}
+
+#image {
+    background-color: hsl(277, 64%, 61%);
+    filter: brightness(0.7);
+    position: relative;
+    width: 70rem;
+    border-radius: 0 12px 12px 0;
+    filter: contrast(1.5);
+}
+
+#d-img {
+    border-radius: 0 12px 12px 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#m-img {
+    opacity: 0.4;
+    border-radius: 12px 12px 0 0;
+    display: none;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 1000px) {
+
+    #main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        display: block;
+        flex-direction: none;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        line-height: 1;
+    }
+
+    #image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+    }
+
+    #d-img {
+        display: none;
+    }
+
+    #m-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #info-parent {
+        position: relative;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.8vh;
+        padding: 1rem;
+        text-overflow: ellipsis;
+
+    }
+
+    #info {
+        margin: 0;
+        padding: 0;
+    }
+
+    #p {
+        display: block;
+        font-weight: 100;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+        margin: 0 1vh;
+        line-height: 2.5vh;
+    }
+
+    #stats {
+        display: block;
+        flex-direction:none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .stat {
+        margin-right: 0;
+    }
+}
